@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/bitfield/uptimerobot/cmd"
+	"github.com/1k-off/uptimerobot/cmd"
 )
 
 func main() {

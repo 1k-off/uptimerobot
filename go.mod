@@ -1,4 +1,4 @@
-module github.com/bitfield/uptimerobot
+module github.com/1k-off/uptimerobot
 
 require (
 	github.com/google/go-cmp v0.3.1
