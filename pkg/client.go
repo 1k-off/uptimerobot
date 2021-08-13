@@ -225,6 +225,8 @@ func (c *Client) MakeAPICall(verb string, r *Response, data []byte) error {
 		fmt.Fprintln(c.Debug, string(requestDump))
 		fmt.Fprintln(c.Debug)
 	}
+	// Adding 7s timeout due to https://blog.uptimerobot.com/uptimerobot-july-2021-update-heartbeat-monitor-and-api-rate-limits/
+	time.Sleep(10 * time.Second)
 	resp, err := c.HTTPClient.Do(req)
 	if err != nil {
 		return fmt.Errorf("HTTP request failed: %v", err)
